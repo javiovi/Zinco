@@ -1,0 +1,130 @@
+.toucher {
+  animation: translateYAnimation 3s ease-out infinite;
+}
+
+@keyframes translateYAnimation {
+  from {
+    transform: translateY(0);
+  }
+
+  80% {
+    transform: translateY(25px);
+  }
+
+  to {
+    transform: translateY(0);
+    /* Adjust the value for your desired translation */
+  }
+}
+
+.arrowsOp {
+  animation: arrowopacity 4s linear infinite;
+  animation-delay: 0s;
+  /* No delay for the first element */
+}
+
+.arrowsOp2 {
+  animation: arrowopacity 4s linear infinite;
+  animation-delay: 1s;
+  /* 1 second delay for the second element */
+}
+
+.arrowsOp3 {
+  animation: arrowopacity 4s linear infinite;
+  animation-delay: 2s;
+  /* 2 seconds delay for the third element */
+}
+
+@keyframes arrowopacity {
+  from {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.ping-slow {
+  animation: ping-slow 6s ease-in infinite;
+  /* Adjust the duration (3s in this example) */
+}
+
+
+
+@keyframes ping-slow {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+/* smaller and darker */
+.smaller-ping-slow{
+  animation: small-ping-slow 6s ease-in infinite;
+}
+
+@keyframes small-ping-slow {
+  0%,
+  100% {
+    transform: scale(0.8);
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
+
+
+
+
+/* Create a class for the slower animation */
+/* /////////////////////////////////////////////////// */
+
+.animated-gradient {
+  content: "";
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-size: 150% 100%;
+  animation: hue 5s ease-in infinite;
+  mix-blend-mode: screen;
+}
+
+@keyframes hue {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* //////////////////////////////////////////////////// ///////////////////////////////////////////////*/
