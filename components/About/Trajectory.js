@@ -22,8 +22,8 @@ export default function Trajectory() {
             {/*  a lot of repetition but should prioritize fixing it later */}
             <div className='mx-auto max-w-[1262px]'>
                 <div data-aos="fade-up" className='flex border-b border-[#493BBB] gap-14 sm:gap-24 md:gap-48 pt-10 pb-6 items-start min-h-[130px] md:min-h-[167px]'>
-                    <p className='font-black font-archivo text-lg sm:text-[22px]'>2024</p>
-                    <p className='font-rubik font-normal text-sm sm:text-base md:text-xl'>Seguimos creciendo, desarrollando ingenierías para proyectos residenciales y comerciales.</p>
+                    <p className='font-black font-archivo text-lg sm:text-[22px]'>2023</p>
+                    <p className='font-rubik font-normal text-sm sm:text-base md:text-xl'></p>
                 </div>
                 <div data-aos="fade-up" className='flex border-b border-[#493BBB] gap-14 sm:gap-24  md:gap-48 pt-10 pb-6 items-start min-h-[130px] md:min-h-[167px]'>
                     <p className='font-black font-archivo text-lg sm:text-[22px]'>2022</p>

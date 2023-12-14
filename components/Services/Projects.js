@@ -5,6 +5,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import { FaMapMarkerAlt } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
 export default function Projects() {
     useEffect(() => {
@@ -23,52 +26,30 @@ export default function Projects() {
 
     const array1 = ['/vida1.jpg', '/vida2.jpg', '/vida3.jpg', '/vida4.jpg', '/vida5.jpg', '/vida6.jpg']
     const array2 = ['/mdp1.jpeg', '/mdp2.jpeg', '/mdp3.jpeg', '/mdp4.jpeg', '/mdp5.jpeg'];
-    const array3 = ['/poggi2.jpg', '/poggi1.jpg', '/poggi3.jpg', '/poggi4.jpg'];
+    const array3 = [ '/poggi0.png','/poggi2.jpg', '/poggi1.jpg', '/poggi3.jpg', '/poggi4.jpg'];
 
     const handleImageClick1 = (index) => {
-
-        setIsCarouselOpen1(true);
+        
+     setIsCarouselOpen1(true);
       };
-      
-      const handleCloseCarousel1 = (e) => {
+    const handleCloseCarousel1 = (e) => {
         if (e.target === e.currentTarget) {
           setIsCarouselOpen1(false);
         }
       };
-    
-      
-    
-  
       const handleImageClick2 = (index) => {
-       
-        setIsCarouselOpen2(true);
+     setIsCarouselOpen2(true);
       };
-      
       const handleCloseCarousel2 = (e) =>{
-      
-            setIsCarouselOpen2(false);
+       setIsCarouselOpen2(false);
       };
-    
-      
-    
-      const handleImageClick3 = (index) => {
-       
-        setIsCarouselOpen3(true);
+     const handleImageClick3 = (index) => {
+     setIsCarouselOpen3(true);
       };
-      
       const handleCloseCarousel3 = (e) =>{
-     
-            setIsCarouselOpen3(false);
+      setIsCarouselOpen3(false);
       };
-    
-    
 
-   
-   
-   
-    const p1 = <div className='space-y-5'><p>Vivienda unifamiliar en planta baja</p><p>Cubierta a dos aguas,perímetro libre. Ubicación: Barrio Vida II, Funes.</p> </div>
-    const p2 = <div className='space-y-5'><p>Vivienda unifamiliar de dos plantas  <p>Cubierta plana / perímetro libre.</p> Ubicación: Barrio Altos del Molino, Carlos Casares.							</p> </div>
-    const p3 = <div className='space-y-5'><p>Complejo habitacional de 4 plantas  cubierta plana	</p><p > Cubierta plana / perímetro libre.</p><p>Ubicacion: Mar de las Pampas, Buenos Aires. </p> </div>
 
 
     return (
@@ -87,6 +68,7 @@ export default function Projects() {
             <div className='flex flex-wrap justify-center md:justify-between overflow-hidden'>
        
                 <div className='my-2 px-2 w-full md:w-1/3 overflow-hidden'>
+                
                 {isCarouselOpen1 ? (
                 <div
                   id="carousel-background"
@@ -99,7 +81,7 @@ export default function Projects() {
                             <Carousel showThumbs={false} dynamicHeight useKeyboardArrows>
                                 {array1.map((image, index) => (
                                     <div key={index}>
-                                        <img src={image} alt={`Slide ${index}`} style={{ height: '500px', objectFit: 'cover' }} />
+                                        <img src={image} alt={`Slide ${index}`} style={{ height: '700px', objectFit: 'cover' }} />
                                     </div>
                                 ))}
                             </Carousel>
@@ -112,10 +94,11 @@ export default function Projects() {
                 </div>
             ) : (
                 <div onClick={() => handleImageClick1(0)} className='grayscale h-[347px] w-full mb-5 relative overflow-hidden cursor-pointer'>
-                    <img src={array1[1]} alt='Current Image' style={{ width: '100%', height: 'auto', objectFit: 'cover'}} />
+                    <img src={array1[1]} alt='Current Image' style={{ width: '100%', height: '350px', objectFit: 'cover'}} />
                 </div>
             )}
-                    <p className='font-archivo font-black text-lg mb-6'>VIDA</p>
+                    <p className='font-archivo font-black text-2xl mb-2'>VIDA</p>
+                    <p className='font-archivo font-light text-m mt-0'>Vivienda unifamiliar planta baja</p>
                     <div className="table-container">
         <table>
             <thead>
@@ -133,14 +116,21 @@ export default function Projects() {
                     <td>131</td>
                     <td>516</td>
                     <td>35 kg/m²</td>
-                    <td>ingeniería</td>
+                    <td>Ingeniería</td>
                 </tr>
             </tbody>
         </table>
     </div>
-                    <div className='w-[85px]  h-[1px] mb-9'></div>
-                    <div className='font-rubik font-normal text-base lg:text-xl mb-5'>{p1Large ? p1 :' Vivienda unifamiliar en planta baja'}</div>
-                    <div onClick={() => setp1Large(!p1Large)} className='h-10 w-10 rounded-full cursor-pointer border border-white grid place-content-center '><p className='leading-none text-4xl relative -top-1'>{p1Large ? '-' : '+'}</p></div>
+                    <div className='w-[85px]  h-[1px] mb-4'></div>
+                    <div className='font-rubik font-normal text-base lg:text-xl mb-5'>
+                
+   
+      Cubierta a dos aguas, perímetro libre.<br />Barrio Vida II, Funes.
+    
+ 
+         </div>
+
+              {/*      <div onClick={() => setp1Large(!p1Large)} className='h-10 w-10 rounded-full cursor-pointer border border-white grid place-content-center '><p className='leading-none text-4xl relative -top-1'>{p1Large ? '-' : '+'}</p></div>*/}
 
                 </div>
                 <div className='my-2 px-2 w-full md:w-1/3 overflow-hidden'>
@@ -156,7 +146,7 @@ export default function Projects() {
                             <Carousel showThumbs={false} dynamicHeight useKeyboardArrows>
                                 {array2.map((image, index) => (
                                     <div key={index}>
-                                        <img src={image} alt={`Slide ${index}`} style={{ height: '500px', objectFit: 'cover' }} />
+                                        <img src={image} alt={`Slide ${index}`} style={{ height: '700px', objectFit: 'cover' }} />
                                     </div>
                                 ))}
                             </Carousel>
@@ -169,67 +159,11 @@ export default function Projects() {
                 </div>
             ) : (
                 <div onClick={() => handleImageClick2(0)} className='grayscale h-[347px] w-full mb-5 relative overflow-hidden cursor-pointer'>
-                    <img src={array2[0]} alt='Current Image' style={{ width: '100%', height: '500px', objectFit: 'cover'}} />
+                    <img src={array2[0]} alt='Current Image' style={{ width: '100%', height: '350px', objectFit: 'cover'}} />
                 </div>
             )}
-                    <p className='font-archivo font-black text-lg mb-6'>POGGI</p>
-                    <div className="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>M² CUB</th>
-                    <th>M² SEMICUBIERTOS</th>
-                    <th>M² TOTALES</th>
-                    <th>CONSUMO</th>
-                    <th>ALCANCE</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>342</td>
-                    <td>153</td>
-                    <td>495</td>
-                    <td>28 kg/m²</td>
-                    <td>ingeniería</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-                    <div className='w-[85px]  h-[1px] mb-9'></div>
-                    <div className='font-rubik font-normal text-base lg:text-xl mb-5'>{p2Large ? p2 :' Vivienda unifamiliar de dos plantas'}</div>
-                    <div onClick={() => setp2Large(!p2Large)} className='h-10 w-10 rounded-full cursor-pointer border border-white grid place-content-center '><p className='leading-none text-4xl relative -top-1'>{p2Large ? '-' : '+'}</p></div>
-
-                </div>
-                <div className='my-2 px-2 w-full md:w-1/3 overflow-hidden'>
-                {isCarouselOpen3 ? (
-                <div
-                  id="carousel-background"
-                  onClick={handleCloseCarousel3}
-                  className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center"
-                >
-                    <div className="relative">
-                      
-                        <div onClick={(e) => e.stopPropagation()}>
-                            <Carousel showThumbs={false} dynamicHeight useKeyboardArrows>
-                                {array3.map((image, index) => (
-                                    <div key={index}>
-                                        <img src={image} alt={`Slide ${index}`} style={{ height: '500px', objectFit: 'cover' }} />
-                                    </div>
-                                ))}
-                            </Carousel>
-                        </div>
-                        {/* El botón o área para cerrar el carrusel, si lo necesitas */}
-                        <button onClick={handleCloseCarousel3} className="close-button">
-                         &times;
-                        </button>
-                    </div>
-                </div>
-            ) : (
-                <div onClick={() => handleImageClick3(0)} className='grayscale h-[347px] w-full mb-5 relative overflow-hidden cursor-pointer'>
-                    <img src={array3[0]} alt='Current Image' style={{ width: '100%', height: '500px', objectFit: 'cover'}} />
-                </div>
-            )}
-                    <p className='font-archivo font-black text-lg mb-6'>MDP</p>
+                    <p className='font-archivo font-black text-2xl mb-2'>MDP</p>
+                    <p className='font-archivo font-light text-m mt-0'>Complejo habitacional de 4 plantas</p>
                     <div className="table-container">
         <table>
             <thead>
@@ -247,14 +181,83 @@ export default function Projects() {
                     <td>23</td>
                     <td>1228</td>
                     <td> - </td>
+                    <td>Ingeniería</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+                    <div className='w-[85px]  h-[1px] mb-4'></div>
+                    <div className='font-rubik font-normal text-base lg:text-xl mb-5'>
+                
+   
+                     Cubierta plana, perímetro libre.<br />Mar de las Pampas, Buenos Aires.
+              
+           
+                   </div>
+                   
+                </div>
+                <div className='my-2 px-2 w-full md:w-1/3 overflow-hidden'>
+                {isCarouselOpen3 ? (
+                <div
+                  id="carousel-background"
+                  onClick={handleCloseCarousel3}
+                  className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center"
+                >
+                    <div className="relative">
+                      
+                        <div onClick={(e) => e.stopPropagation()}>
+                            <Carousel showThumbs={false} dynamicHeight useKeyboardArrows>
+                                {array3.map((image, index) => (
+                                    <div key={index}>
+                                        <img src={image} alt={`Slide ${index}`} style={{ height: '700px', objectFit: 'cover' }} />
+                                    </div>
+                                ))}
+                            </Carousel>
+                        </div>
+                        {/* El botón o área para cerrar el carrusel, si lo necesitas */}
+                        <button onClick={handleCloseCarousel3} className="close-button">
+                         &times;
+                        </button>
+                    </div>
+                </div>
+            ) : (
+                <div onClick={() => handleImageClick3(0)} className='grayscale h-[347px] w-full mb-5 relative overflow-hidden cursor-pointer'>
+                    <img src={array3[0]} alt='Current Image' style={{ width: '100%', height: '340px', objectFit: 'cover'}} />
+                </div>
+            )}
+                    <p className='font-archivo font-black text-2xl mb-2'>POGGI</p>
+                    <p className='font-archivo font-light text-m mt-0'>Vivienda unifamiliar de dos plantas</p>
+                    <div className="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>M² CUB</th>
+                    <th>M² SEMICUBIERTOS</th>
+                    <th>M² TOTALES</th>
+                    <th>CONSUMO</th>
+                    <th>ALCANCE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>342</td>
+                    <td>193</td>
+                    <td>495</td>
+                    <td> 28 </td>
                     <td>ingeniería</td>
                 </tr>
             </tbody>
         </table>
     </div>
-                    <div className='w-[85px] h-[1px] mb-9'></div>
-                    <div className='font-rubik font-normal text-base lg:text-xl mb-5'>{p3Large ? p3 :'Complejo habitacional de 4 plantas'}</div>
-                    <div onClick={() => setp3Large(!p3Large)} className='h-10 w-10 rounded-full cursor-pointer border border-white grid place-content-center '><p className='leading-none text-4xl relative -top-1'>{p3Large ? '-' : '+'}</p></div>
+                    <div className='w-[85px] h-[1px] mb-4'></div>
+                    <div className='font-rubik font-normal text-base lg:text-xl mb-5'>
+                
+   
+                     Cubierta plana, perímetro libre.<br />Barrio Altos del Molino, Carlos Casares.
+              
+           
+                   </div>
+                 {/*    <div onClick={() => setp3Large(!p3Large)} className='h-10 w-10 rounded-full cursor-pointer border border-white grid place-content-center '><p className='leading-none text-4xl relative -top-1'>{p3Large ? '-' : '+'}</p></div>*/}
 
                 </div>
          </div>

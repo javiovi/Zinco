@@ -88,20 +88,21 @@ html {
 
 .table-container {
     overflow-x: auto; 
+    font-family: 'Rubik';
 }
 
 table {
-    width: 100%; /* Ajusta al ancho del contenedor */
+    width: 100%; 
     border-collapse: collapse; 
     margin-top: 1rem;
     font-size: 12px;
     margin-bottom: 0;
-    font-family: 'Rubik';
+ 
 }
 
 th, td {
     text-align: center;
-    padding: 8px; /* Ajusta el relleno según sea necesario */
+    padding: 5px; /* Ajusta el relleno según sea necesario */
     border: 1px solid #252b91; 
     font-family: 'Rubik';
     
@@ -116,6 +117,9 @@ th {
 td {
     background-color:transparent; 
     font-size: 13px;}
+
+
+
     #projects {
         margin-bottom: 48px;
         padding: 0;
@@ -153,3 +157,5 @@ td {
         margin-top: 20px;
         /* Estilos adicionales para el botón */
       }
+
+     

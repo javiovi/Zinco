@@ -41,15 +41,11 @@ export default function ColoredTitle() {
                 <div className='w-full'>
 
                     <div className='flex xl:justify-center'>
-                        <h1 className="uppercase font-archivo font-black  leading-[1.10] text-[8.5vw] z-10  xl:text-[4vw] 2xl:text-[3.8vw]  animated-gradient relative" style={{
-                            backgroundImage: `linear-gradient(${degs}deg, #4837cf, #c72ee1, #c72ee1, #1ea5e1, #ccdaff, #ccdaff)`,
-                            /* Other CSS properties for your element */
-                        }}>
-                            <span className='whitespace-nowrap'> Innovación &</span> <br />
-                            <span className='whitespace-nowrap'> Ingeniería en</span> <br />
-                            <span className='whitespace-nowrap'> Steel Frame</span>
-                        </h1>
-
+                 
+                <div className='min-h-[100px] relative z-10 backdrop-blur  py-6 pl-8 pr-1'>
+                    <h1 className='text-[6vw] z-10 xl:text-[3.1vw] 2xl:text-[56px] leading-normal font-black font-archivo'>
+                        INNOVACIÓN & <br /> INGENIERÍA EN <br />  <span className='bg-gradient-to-r from-[#1d1db8] to-[#906bc0] test px-2 py-1 text-[#1e1e1e]'>STEEL FRAME.</span></h1>
+                </div>
                     </div>
 
                     {/* LINKS TO ANCHORS DONT WORK WHEN SMOOTH SCROLL KEEPS MOVING */}
