@@ -158,4 +158,19 @@ td {
         /* Estilos adicionales para el botón */
       }
 
+      .location-icon {
+        vertical-align: top; /* Alinea el icono con el centro del texto */
+        margin-right: 0.2rem; /* Añade un margen derecho para separar del texto */
      
+        width: 1em; 
+        height: 1em;
+      
+      }
+      .text-with-icon {
+        position: relative;
+        top: 2px; /* Ajusta este valor según sea necesario para mover el texto hacia abajo */
+      }
+      p {
+       
+        line-height: 1.3; /* Ajusta esto según tu diseño */
+      }
