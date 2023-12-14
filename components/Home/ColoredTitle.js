@@ -44,7 +44,7 @@ export default function ColoredTitle() {
                  
                 <div className='min-h-[100px] relative z-10 backdrop-blur  py-6 pl-8 pr-1'>
                     <h1 className='text-[6vw] z-10 xl:text-[3.1vw] 2xl:text-[56px] leading-normal font-black font-archivo'>
-                        INNOVACIÓN & <br /> INGENIERÍA EN <br />  <span className='bg-gradient-to-r from-[#1d1db8] to-[#906bc0] test px-2 py-1 text-[#1e1e1e]'>STEEL FRAME.</span></h1>
+                        INNOVACIÓN E <br /> INGENIERÍA EN <br />  <span className='bg-gradient-to-r from-[#1d1db8] to-[#906bc0] test px-2 py-1 text-[#1e1e1e]'>STEEL FRAME.</span></h1>
                 </div>
                     </div>
 
