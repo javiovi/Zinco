@@ -25,14 +25,13 @@ export default function ColoredTitle() {
     return (
         <div className='px-[7.3vw] mt-16 sm:mt-32 md:mt-40 flex flex-col xl:flex-row gap-y-10'>
             <div data-aos="fade-up" className='flex-1 w-full  '>
-                <video
-                    // ref={videoRef}
-                    className='w-[600px] h-[487.5] mx-auto'
-                    autoPlay
-                    loop
-                    muted
-                    src="/videos/video2.mp4"
-                ></video>
+            <div
+      className='w-[600px] h-[487.5px] mx-auto bg-gray-800'
+
+    >
+     
+       <p className="text-center">Imagen Próximamente</p> 
+    </div>
             </div>
 
 

@@ -88,7 +88,7 @@ html {
 
 .table-container {
     overflow-x: auto; 
-    font-family: 'Rubik';
+ 
 }
 
 table {
@@ -104,7 +104,7 @@ th, td {
     text-align: center;
     padding: 5px; /* Ajusta el relleno según sea necesario */
     border: 1px solid #252b91; 
-    font-family: 'Rubik';
+  
     
 
 }
@@ -147,16 +147,7 @@ td {
           margin-bottom: 20px; /* Reduce el espacio entre los elementos apilados */
         }
       }
-      
-      /* Botón para mostrar más elementos */
-      .show-more-button {
-        flex-basis: 100%; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        /* Estilos adicionales para el botón */
-      }
+     
 
       .location-icon {
         vertical-align: top; /* Alinea el icono con el centro del texto */

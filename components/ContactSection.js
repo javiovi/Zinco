@@ -17,14 +17,13 @@ export default function ContactSection({smallTitle}) {
                 <ContactForm />
             </div>
             <div className="flex-1 hidden md:grid place-content-center">
-            <video
-                    // ref={videoRef}
-                    className='w-full h-auto '
-                    autoPlay
-                    loop
-                    muted
-                    src="/videos/video02.mp4"
-                ></video>
+            <div
+      className='w-[600px] h-[601.5px] mx-auto bg-gray-800'
+      // Puedes agregar aquí más estilos si es necesario
+    >
+      {/* Si quieres agregar un texto indicativo puedes descomentar la siguiente línea */}
+       <p className="text-center">Imagen Próximamente</p> 
+    </div>
             </div>
         </div>
     )

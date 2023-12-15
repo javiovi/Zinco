@@ -126,7 +126,7 @@ export default function Projects() {
                     <div className="table-container">
         <table>
             <thead>
-                <tr>
+                <tr className='font-archivo'>
                     <th>M² CUB</th>
                     <th>M² SEMICUBIERTOS</th>
                     <th>M² TOTALES</th>
@@ -135,7 +135,7 @@ export default function Projects() {
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr className='font-archivo'>
                     <td>332</td>
                     <td>103</td>
                     <td>435</td>
@@ -197,7 +197,7 @@ export default function Projects() {
                     <div className="table-container">
         <table>
             <thead>
-                <tr>
+                <tr className='font-archivo'>
                     <th>M² CUB</th>
                     <th>M² SEMICUBIERTOS</th>
                     <th>M² TOTALES</th>
@@ -206,7 +206,7 @@ export default function Projects() {
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr className='font-archivo'>
                     <td>155</td>
                     <td>95</td>
                     <td>250</td>
@@ -268,7 +268,7 @@ export default function Projects() {
                     <div className="table-container">
         <table>
             <thead>
-                <tr>
+                <tr className='font-archivo'>
                     <th>M² CUB</th>
                     <th>M² SEMICUBIERTOS</th>
                     <th>M² TOTALES</th>
@@ -277,7 +277,7 @@ export default function Projects() {
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr className='font-archivo'>
                     <td>342</td>
                     <td>193</td>
                     <td>495</td>
@@ -340,7 +340,7 @@ export default function Projects() {
                     <div className="table-container">
         <table>
             <thead>
-                <tr>
+                <tr className='font-archivo'>
                     <th>M² CUB</th>
                     <th>M² SEMICUBIERTOS</th>
                     <th>M² TOTALES</th>
@@ -349,7 +349,7 @@ export default function Projects() {
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr className='font-archivo'>
                     <td>385</td>
                     <td>131</td>
                     <td>516</td>
@@ -411,7 +411,7 @@ export default function Projects() {
                     <div className="table-container">
         <table>
             <thead>
-                <tr>
+                <tr className='font-archivo'>
                     <th>M² CUB</th>
                     <th>M² SEMICUBIERTOS</th>
                     <th>M² TOTALES</th>
@@ -420,7 +420,7 @@ export default function Projects() {
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr className='font-archivo'>
                     <td>1205</td>
                     <td>23</td>
                     <td>1228</td>
@@ -479,7 +479,7 @@ export default function Projects() {
                     <div className="table-container">
         <table>
             <thead>
-                <tr>
+                <tr className='font-archivo'>
                     <th>M² CUB</th>
                     <th>M² SEMICUBIERTOS</th>
                     <th>M² TOTALES</th>
@@ -488,7 +488,7 @@ export default function Projects() {
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr className='font-archivo'>
                     <td>184</td>
                     <td>184</td>
                     <td> -</td>
@@ -520,20 +520,6 @@ export default function Projects() {
 
 </div>
 
-
-
-
-
- <div className="flex justify-center">
-<div className="show-more-button" onClick={() => setShowMore(!showMore)}>
-    {showMore ? '-' : '+'}</div>
-         {showMore && (
-    <>
-    
-    
-    </>
-  )}
-</div>
                  </div>
      
     )}

@@ -37,14 +37,13 @@ export default function Hero() {
 
             <div className='flex-1 relative xl:pl-12 xl:pr-6 pt-10 md:mt-0 grid place-content-center'>
                 {/*  */}
-                <video
-                    // ref={videoRef}
-                    className=''
-                    autoPlay
-                    loop
-                    muted
-                    src="/videos/video1.mp4"
-                ></video>
+                <div
+      className='w-[600px] h-[487.5px] mx-auto bg-gray-800'
+      // Puedes agregar aquí más estilos si es necesario
+    >
+      {/* Si quieres agregar un texto indicativo puedes descomentar la siguiente línea */}
+      <p className="text-center">Imagen Próximamente</p>
+    </div>
                 {/*  */}
 
                 <div className='hidden xl:inline-block absolute -right-9 top-2/4 space-y-3'>
