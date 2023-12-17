@@ -369,7 +369,7 @@ export default function Projects() {
                     </div>
                 </div>
             ) : (
-                <div ç onClick={() => handleImageClick1(0)} className='grayscale h-[347px] w-full mb-5 relative overflow-hidden cursor-pointer'>
+                <div onClick={() => handleImageClick1(0)} className='grayscale h-[347px] w-full mb-5 relative overflow-hidden cursor-pointer'>
                     <img src={array1[1]} alt='Current Image' style={{ width: '100%', height: '350px', objectFit: 'cover'}} />
                 </div>
             )}
