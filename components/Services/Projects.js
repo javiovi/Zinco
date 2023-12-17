@@ -497,7 +497,7 @@ export default function Projects() {
                     <div className="relative">
                       
                         <div onClick={(e) => e.stopPropagation()}>
-                            <Carousel showThumbs={false} dynamicHeight useKeyboardArrows  dynamicHeight
+                            <Carousel showThumbs={false} dynamicHeight useKeyboardArrows  
   showStatus={false}
   showIndicators={false}
   infiniteLoop>
