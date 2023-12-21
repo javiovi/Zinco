@@ -38,23 +38,20 @@ export default function Hero() {
             <div className='flex-1 relative xl:pl-12 xl:pr-6 pt-10 md:mt-0 grid place-content-center'>
                 {/*  */}
                 <div
-      className='w-[600px] h-[487.5px] mx-auto bg-gray-800'
+      className='w-[600px] h-[487.5px] mx-auto bg-trasnparent'
       // Puedes agregar aquí más estilos si es necesario
     >
-      {/* Si quieres agregar un texto indicativo puedes descomentar la siguiente línea */}
-      <p className="text-center">Imagen Próximamente</p>
+      <Image className='w-full absolute inset-0 h-full object-cover'style={{ marginTop: '50px', marginLeft: '5px',}} alt='home1' src='/VIDA2.png' quality={100} width={500} height={450} />
+     
     </div>
                 {/*  */}
 
                 <div className='hidden xl:inline-block absolute -right-9 top-2/4 space-y-3'>
-                    <div className='h-16 w-8 rounded-full border-2 border-[#3e3391] flex justify-center items-start py-3'>
-                        <div className='h-3 w-3 rounded-full toucher bg-[#3e3391]'></div>
+                 
                     </div>
-                    <div className='flex -space-x-[5px] arrowsOp opacity-0 '><span className='h-[2px] flex-1 bg-[#3e3391] rotate-45 '></span><span className='h-[2px] -rotate-45 flex-1 bg-[#3e3391]'></span></div>
-                    <div className='flex -space-x-[5px] arrowsOp2 opacity-0'><span className='h-[2px] flex-1 bg-[#3e3391] rotate-45 '></span><span className='h-[2px] -rotate-45 flex-1 bg-[#3e3391]'></span></div>
-                    <div className='flex -space-x-[5px] arrowsOp3 opacity-0'><span className='h-[2px] flex-1 bg-[#3e3391] rotate-45 '></span><span className='h-[2px] -rotate-45 flex-1 bg-[#3e3391]'></span></div>
+                  
 
-                </div>
+                
             </div>
             {/* bg-indigo-600 */}
         </div>

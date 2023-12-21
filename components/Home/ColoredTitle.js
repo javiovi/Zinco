@@ -3,6 +3,7 @@ import Arrow from '../Arrow'
 import Link from 'next/link'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Image from 'next/image'
 
 export default function ColoredTitle() {
 
@@ -26,11 +27,11 @@ export default function ColoredTitle() {
         <div className='px-[7.3vw] mt-16 sm:mt-32 md:mt-40 flex flex-col xl:flex-row gap-y-10'>
             <div data-aos="fade-up" className='flex-1 w-full  '>
             <div
-      className='w-[600px] h-[487.5px] mx-auto bg-gray-800'
+      className='w-[600px] h-[487.5px] mx-auto bg-trasnparent'
 
     >
-     
-       <p className="text-center">Imagen Próximamente</p> 
+     <Image className='w-full absolute inset-0 h-full object-cover' style={{ marginTop: '-20px', marginRight: '20px',}} alt='home1' src='/POGGI3.png' quality={100} width={400} height={325} />
+      
     </div>
             </div>
 

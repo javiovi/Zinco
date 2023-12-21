@@ -1,5 +1,6 @@
 import React from 'react'
 import ContactForm from './Helpers/ContactForm'
+import Image from 'next/image'
 
 export default function ContactSection({smallTitle}) {
 
@@ -18,11 +19,10 @@ export default function ContactSection({smallTitle}) {
             </div>
             <div className="flex-1 hidden md:grid place-content-center">
             <div
-      className='w-[600px] h-[601.5px] mx-auto bg-gray-800'
-      // Puedes agregar aquí más estilos si es necesario
+      className='w-[600px] h-[601.5px] mx-auto bg-trasnparent'
+     
     >
-      {/* Si quieres agregar un texto indicativo puedes descomentar la siguiente línea */}
-       <p className="text-center">Imagen Próximamente</p> 
+     <Image className='w-full inset-0 h-full object-cover' style={{ marginTop: '-10px', marginLeft: '-20px',}} alt='CHACRAS' src='/CHACRAS3.png' quality={100} width={600} height={601} />
     </div>
             </div>
         </div>
