@@ -41,7 +41,7 @@ export default function Hero() {
       className='w-[600px] h-[487.5px] mx-auto bg-trasnparent'
       // Puedes agregar aquí más estilos si es necesario
     >
-      <Image className='w-full absolute inset-0 h-full object-cover'style={{ marginTop: '50px', marginLeft: '5px',}} alt='home1' src='/VIDA2.png' quality={100} width={500} height={450} />
+      <Image className='w-full absolute inset-0 h-full object-cover'style={{ marginTop: '50px', marginLeft: '5px',}} alt='home1' src='/VIDA.corte.png' quality={100} width={500} height={450} />
      
     </div>
                 {/*  */}
