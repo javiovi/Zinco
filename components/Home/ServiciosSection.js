@@ -81,7 +81,7 @@ export default function Servicios() {
                 </div>
                 <div className='flex-1 flex w-full gap-3 relative'>
                     <div className='flex-1 h-[50vw] md:h-[517px] relative'>
-                        <Image className='w-full z-10 absolute inset-0 h-full object-cover grayscale'  alt='Steel1' src='/Chambeando.png' quality={100} width={820} height={517} />
+                        <Image className='w-full z-10 absolute inset-0 h-full object-cover grayscale'  alt='Steel1' src='/chambeando.jpg' quality={100} width={820} height={517} />
                         <div className="absolute bg-[left] md:bg-[right_top] ping-slow duration-1000 -top-[20%] bottom-[20%] inset-[0%] md:-inset-[20%] md:left-[50%] md:-top-[45%] blur-[40px] z-0 bg-elipse" ></div>
 
                     </div>

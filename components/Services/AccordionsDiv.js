@@ -33,7 +33,7 @@ export default function AccordionsDiv() {
     return (
         <div data-aos="fade-up" className='flex mb-24  md:mb-48 gap-5 flex-col xl:flex-row px-[7.3vw] xl:px-0'>
             <div className='flex-1 mx-auto'>
-                <Image className='z-10 grayscale' alt='Steel1' src='/servicios.png' quality={100} width={835} height={635} />
+                <Image className='z-10 grayscale' alt='Steel1' src='/servicios.jpg' quality={100} width={835} height={635} />
             </div>
             <div className='flex-1 pt-10 xl:pr-[3vw] 2xl:pr-[7.2vw] space-y-10 max-w-[835px] xl:max-w-none mx-auto'>
 

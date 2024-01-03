@@ -13,7 +13,7 @@ export default function Discover() {
     return (
         <div className='mb-20 sm:mb-32 md:mb-48 flex flex-col xl:flex-row justify-between pl-[7.3vw] xl:border-b border-[#493BBB]'>
             <div data-aos="fade-up" className='flex-1 border-[#493BBB] xl:border-r pb-10 pr-[7.3vw] xl:pr-10 flex items-center'>
-                <Image className='w-full' alt='Tamara Foto' src='/nosotros.png' quality={100} width={779} height={746} />
+                <Image className='w-full' alt='Tamara Foto' src='/nosotros.jpg' quality={100} width={779} height={746} />
             </div>
             <div data-aos="fade-up" className='flex-1 flex flex-col'>
                 <div className='font-rubik font-normal text-justify sm:text-left text-lg md:text-xl pb-10 xl:pl-10 space-y-8 [&>*]:max-w-[670px] pr-[7.3vw]'>
