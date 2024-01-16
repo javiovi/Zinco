@@ -184,23 +184,7 @@ td {
     border-style: solid ;
     border-width: 0 4px 4px 0; /* Ajusta el grosor de la flecha */
 }
-#carousel-background {
-  height: 700px;
-  top: -150px;
-  
-  
-}
-#carousel-background1 {
-  height: 700px;
-  top:500px
-  
-}
 
-#carousel-background2 {
-  height: 700px;
-  top:1100px
-  
-}
 
 @media (max-width: 768px) {
   .carousel .slide img {
@@ -209,4 +193,45 @@ td {
     max-height: 200px; 
   }
 
+}
+
+#carousel-background {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  left: 30%;
+  top:32%;
+  max-width: 600px;
+
+  max-height: 400px;
+ 
+}
+#carousel-tres{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  left: 30%;
+  top:65%;
+  max-width: 600px;
+
+  max-height: 400px;
+ 
+}
+
+
+.carousel .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .slide img {
+  max-width: 600px;
+  max-height: 600px;
+  object-fit: contain; 
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
 }
