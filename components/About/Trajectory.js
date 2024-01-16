@@ -23,11 +23,13 @@ export default function Trajectory() {
             <div className='mx-auto max-w-[1262px]'>
             <div data-aos="fade-up" className='flex border-b border-[#493BBB] gap-14 sm:gap-24 md:gap-48 pt-10 pb-6 items-start min-h-[130px] md:min-h-[167px]'>
                     <p className='font-black font-archivo text-lg sm:text-[22px]'>2024</p>
-                    <p className='font-rubik font-normal text-sm sm:text-base md:text-xl'>Seguimos creciendo, desarrollando ingenierías para proyectos residenciales y comerciales.</p>
+                    <p className='font-rubik font-normal text-sm sm:text-base md:text-xl'>Este año aspiramos a continuar nuestra evolución profesional, siempre enfocados en brindar el mejor servicio a nuestros clientes.</p>
                 </div>
                 <div data-aos="fade-up" className='flex border-b border-[#493BBB] gap-14 sm:gap-24 md:gap-48 pt-10 pb-6 items-start min-h-[130px] md:min-h-[167px]'>
                     <p className='font-black font-archivo text-lg sm:text-[22px]'>2023</p>
-                    <p className='font-rubik font-normal text-sm sm:text-base md:text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat ipsum ac eros lacinia suscipit. Sed sed tortor eu eros.</p>
+                    <p className='font-rubik font-normal text-sm sm:text-base md:text-xl'>El año 2023 marcó un período de significativo crecimiento, tanto a nivel profesional como personal.
+                     Hemos llevado a cabo el desarrollo de ingenierías de detalles en mayores escalas, abordando proyectos de viviendas colectivas y comerciales de más de dos pisos, situados en diferentes localidades del país.
+Además, seguimos apostando a la ejecución de obras residenciales, en asociación con arquitectos y arquitectas de la ciudad de Rosario y sus alrededores.</p>
                 </div>
                 <div data-aos="fade-up" className='flex border-b border-[#493BBB] gap-14 sm:gap-24  md:gap-48 pt-10 pb-6 items-start min-h-[130px] md:min-h-[167px]'>
                     <p className='font-black font-archivo text-lg sm:text-[22px]'>2022</p>
