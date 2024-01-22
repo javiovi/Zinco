@@ -235,3 +235,18 @@ td {
   transform: rotate(180deg);
   transition: transform 0.3s ease;
 }
+
+@media (max-width: 768px) {
+  /* Estilos para móviles */
+  .carousel-container {
+    /* Asegúrate de que el carrusel se muestre en el lugar que desees, por ejemplo: */
+    position: static;
+    width: 100%; /* Asume el ancho completo del contenedor */
+    height: auto; /* Altura automática basada en el contenido del carrusel */
+  }
+
+  .close-button {
+    /* Puede que no necesites un botón de cerrar en móviles si el carrusel no es un modal */
+    display: none;
+  }
+}

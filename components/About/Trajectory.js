@@ -33,7 +33,7 @@ Además, seguimos apostando a la ejecución de obras residenciales, en asociaci�
                 </div>
                 <div data-aos="fade-up" className='flex border-b border-[#493BBB] gap-14 sm:gap-24  md:gap-48 pt-10 pb-6 items-start min-h-[130px] md:min-h-[167px]'>
                     <p className='font-black font-archivo text-lg sm:text-[22px]'>2022</p>
-                    <p className='font-rubik font-normal text-sm sm:text-base md:text-xl'>Comenzamos a trabajar bajo en nombre de ZincO, desarrollando trabajos de ingeniería de detalles y también sumando ejecución de obras residenciales en Rosario.</p>
+                    <p className='font-rubik font-normal text-sm sm:text-base md:text-xl'>Comenzamos a trabajar bajo el nombre de ZincO, desarrollando trabajos de ingeniería de detalles y también sumando ejecución de obras residenciales en Rosario.</p>
                 </div>
                 <div data-aos="fade-up" className='flex border-b border-[#493BBB] gap-6 sm:gap-[54px] md:gap-[154px] pt-10 pb-6 items-start min-h-[130px] md:min-h-[167px]'>
                     <p className='font-black font-archivo text-lg sm:text-[22px] whitespace-nowrap'>2020-21</p>
