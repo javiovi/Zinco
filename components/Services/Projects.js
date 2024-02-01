@@ -258,29 +258,14 @@ export default function Projects() {
     className={isTableVisible2 ? 'rotate' : ''}
   />
 </div>
-<div className={`table-container ${isTableVisible2 ? 'visible' : 'hidden'}`}>
-   <div className="table-container">
-        <table>
-            <thead>
-                <tr className='font-archivo'>
-                    <th>M² CUB</th>
-                    <th>M² SEMICUBIERTOS</th>
-                    <th>M² TOTALES</th>
-                    <th>CONSUMO</th>
-                    <th>ALCANCE</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr className='font-archivo'>
-                    <td>332</td>
-                    <td>103</td>
-                    <td>435</td>
-                    <td> 28 kg/m²</td>
-                    <td>Ingeniería</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div className={`data-list ${isTableVisible2 ? 'visible' : 'hidden'}`}>
+<div class="data-list">
+  <p>M² Cub: 332</p>
+  <p>M² Semicubiertos: 103</p>
+  <p>M² Totales: 435</p>
+  <p>Consumo: 28 kg/m²</p>
+  <p>Alcance: Ingeniería</p>
+</div>
 </div>
 </div>
                  {/*    <div onClick={() => setp3Large(!p3Large)} className='h-10 w-10 rounded-full cursor-pointer border border-white grid place-content-center '><p className='leading-none text-4xl relative -top-1'>{p3Large ? '-' : '+'}</p></div>*/}
@@ -356,29 +341,14 @@ export default function Projects() {
     className={isTableVisible1 ? 'rotate' : ''}
   />
 </div>
-<div className={`table-container ${isTableVisible1 ? 'visible' : 'hidden'}`}>
-<div className="table-container">
-        <table>
-            <thead>
-                <tr className='font-archivo'>
-                    <th>M² CUB</th>
-                    <th>M² SEMICUBIERTOS</th>
-                    <th>M² TOTALES</th>
-                    <th>CONSUMO</th>
-                    <th>ALCANCE</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr className='font-archivo'>
-                    <td>155</td>
-                    <td>95</td>
-                    <td>250</td>
-                    <td> 22 kg/m²</td>
-                    <td>Ingeniería</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div className={`data-list ${isTableVisible1 ? 'visible' : 'hidden'}`}>
+<div class="data-list">
+  <p>M² Cub: 155</p>
+  <p>M² Semicubiertos: 95</p>
+  <p>M² Totales: 250</p>
+  <p>Consumo: 22 kg/m²</p>
+  <p>Alcance: Ingeniería</p>
+</div>
     </div>
 </div>
 
@@ -454,29 +424,14 @@ export default function Projects() {
     className={isTableVisible3 ? 'rotate' : ''}
   />
 </div>
-<div className={`table-container ${isTableVisible3 ? 'visible' : 'hidden'}`}>
-             <div className="table-container">
-        <table>
-            <thead>
-                <tr className='font-archivo'>
-                    <th>M² CUB</th>
-                    <th>M² SEMICUBIERTOS</th>
-                    <th>M² TOTALES</th>
-                    <th>CONSUMO</th>
-                    <th>ALCANCE</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr className='font-archivo'>
-                    <td>342</td>
-                    <td>193</td>
-                    <td>495</td>
-                    <td> 28 </td>
-                    <td>ingeniería</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div className={`data-list ${isTableVisible3 ? 'visible' : 'hidden'}`}>
+<div class="data-list">
+  <p>M² Cub: 342</p>
+  <p>M² Semicubiertos: 133</p>
+  <p>M² Totales: 495</p>
+  <p>Consumo: 28 kg/m²</p>
+  <p>Alcance: Ingeniería</p>
+</div>
 </div>
 </div>
 
@@ -555,29 +510,14 @@ export default function Projects() {
     className={isTableVisible4 ? 'rotate' : ''}
   />
 </div>
-<div className={`table-container ${isTableVisible4 ? 'visible' : 'hidden'}`}>
-<div className="table-container">
-        <table>
-            <thead>
-                <tr className='font-archivo'>
-                    <th>M² CUB</th>
-                    <th>M² SEMICUBIERTOS</th>
-                    <th>M² TOTALES</th>
-                    <th>CONSUMO</th>
-                    <th>ALCANCE</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr className='font-archivo'>
-                    <td>385</td>
-                    <td>131</td>
-                    <td>516</td>
-                    <td>35 kg/m²</td>
-                    <td>Ingeniería</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div className={`data-list ${isTableVisible4 ? 'visible' : 'hidden'}`}>
+<div class="data-list">
+  <p>M² Cub: 385</p>
+  <p>M² Semicubiertos: 131</p>
+  <p>M² Totales: 516</p>
+  <p>Consumo: 35 kg/m²</p>
+  <p>Alcance: Ingeniería</p>
+</div>
     </div>
 </div>
 
@@ -655,29 +595,14 @@ export default function Projects() {
     className={isTableVisible5 ? 'rotate' : ''}
   />
 </div>
-<div className={`table-container ${isTableVisible5 ? 'visible' : 'hidden'}`}>
-<div className="table-container">
-        <table>
-            <thead>
-                <tr className='font-archivo'>
-                    <th>M² CUB</th>
-                    <th>M² SEMICUBIERTOS</th>
-                    <th>M² TOTALES</th>
-                    <th>CONSUMO</th>
-                    <th>ALCANCE</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr className='font-archivo'>
-                    <td>1205</td>
-                    <td>23</td>
-                    <td>1228</td>
-                    <td> - </td>
-                    <td>Ingeniería</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div className={`data-list ${isTableVisible5 ? 'visible' : 'hidden'}`}>
+<div class="data-list">
+  <p>M² Cub: 1205</p>
+  <p>M² Semicubiertos: 23</p>
+  <p>M² Totales: 1228</p>
+  
+  <p>Alcance: Ingeniería</p>
+</div>
     </div>
 </div>
 
@@ -751,29 +676,14 @@ export default function Projects() {
     className={isTableVisible6 ? 'rotate' : ''}
   />
 </div>
-<div className={`table-container ${isTableVisible6 ? 'visible' : 'hidden'}`}>
-<div className="table-container">
-        <table>
-            <thead>
-                <tr className='font-archivo'>
-                    <th>M² CUB</th>
-                    <th>M² SEMICUBIERTOS</th>
-                    <th>M² TOTALES</th>
-                    <th>CONSUMO</th>
-                    <th>ALCANCE</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr className='font-archivo'>
-                    <td>184</td>
-                    <td>184</td>
-                    <td> -</td>
-                    <td> 28 kg/m² </td>
-                    <td>Ingeniería</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div className={`data-list ${isTableVisible6 ? 'visible' : 'hidden'}`}>
+<div class="data-list">
+  <p>M² Cub: 184</p>
+  <p>M² Semicubiertos: 184</p>
+
+  <p>Consumo: 28 kg/m²</p>
+  <p>Alcance: Ingeniería</p>
+</div>
     </div>
 </div>
 
@@ -851,29 +761,14 @@ export default function Projects() {
     className={isTableVisible7 ? 'rotate' : ''}
   />
 </div>
-<div className={`table-container ${isTableVisible7 ? 'visible' : 'hidden'}`}>
-        <div className="table-container">
-        <table>
-            <thead>
-                <tr className='font-archivo'>
-                    <th>M² CUB</th>
-                    <th>M² SEMICUBIERTOS</th>
-                    <th>M² TOTALES</th>
-                    <th>CONSUMO</th>
-                    <th>ALCANCE</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr className='font-archivo'>
-                    <td>184</td>
-                    <td>184</td>
-                    <td> -</td>
-                    <td> 28 kg/m² </td>
-                    <td>Ingeniería</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div className={`data-list ${isTableVisible7 ? 'visible' : 'hidden'}`}>
+<div class="data-list">
+  <p>M² Cub: 184</p>
+  <p>M² Semicubiertos: 184</p>
+  
+  <p>Consumo: 28 kg/m²</p>
+  <p>Alcance: Ingeniería</p>
+</div>
     </div>
 </div>
 
@@ -949,29 +844,14 @@ export default function Projects() {
     className={isTableVisible8 ? 'rotate' : ''}
   />
 </div>
-<div className={`table-container ${isTableVisible8 ? 'visible' : 'hidden'}`}>
-           <div className="table-container">
-        <table>
-            <thead>
-                <tr className='font-archivo'>
-                    <th>M² CUB</th>
-                    <th>M² SEMICUBIERTOS</th>
-                    <th>M² TOTALES</th>
-                    <th>CONSUMO</th>
-                    <th>ALCANCE</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr className='font-archivo'>
-                    <td>385</td>
-                    <td>131</td>
-                    <td> 516</td>
-                    <td> 35 kg/m² </td>
-                    <td>Ingeniería</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div className={`data-list ${isTableVisible8 ? 'visible' : 'hidden'}`}>
+<div class="data-list">
+  <p>M² Cub: 385</p>
+  <p>M² Semicubiertos: 131</p>
+  <p>M² Totales: 516</p>
+  <p>Consumo: 35 kg/m²</p>
+  <p>Alcance: Ingeniería</p>
+</div>
     </div>
 </div>
 
@@ -1047,29 +927,14 @@ export default function Projects() {
     className={isTableVisible9 ? 'rotate' : ''}
   />
 </div>
-<div className={`table-container ${isTableVisible9 ? 'visible' : 'hidden'}`}>
-              <div className="table-container">
-        <table>
-            <thead>
-                <tr className='font-archivo'>
-                    <th>M² CUB</th>
-                    <th>M² SEMICUBIERTOS</th>
-                    <th>M² TOTALES</th>
-                    <th>CONSUMO</th>
-                    <th>ALCANCE</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr className='font-archivo'>
-                    <td>165</td>
-                    <td>231</td>
-                    <td>396</td>
-                    <td> kg/m² </td>
-                    <td>Ingeniería</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<div className={`data-list ${isTableVisible9 ? 'visible' : 'hidden'}`}>
+<div class="data-list">
+  <p>M² Cub: 165</p>
+  <p>M² Semicubiertos: 231</p>
+  <p>M² Totales: 396</p>
+
+  <p>Alcance: Ingeniería</p>
+</div>
     </div>
 </div>
 

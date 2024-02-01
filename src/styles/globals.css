@@ -87,39 +87,15 @@ html {
     margin: auto;
 }
 
-.table-container {
-    overflow-x: auto; 
- 
+.data-list p {
+  margin: 0;  
+ /* Usa la fuente de tu elección */
+  font-size: 16px; /* Elige el tamaño de fuente deseado */
 }
 
-table {
-    width: 100%; 
-    border-collapse: collapse; 
-    margin-top: 1rem;
-    font-size: 12px;
-    margin-bottom: 0;
- 
+.data-list strong {
+  font-weight: bold; /* Asegúrate de que los títulos sean en negrita */
 }
-
-th, td {
-    text-align: center;
-    padding: 5px; /* Ajusta el relleno según sea necesario */
-    border: 1px solid #252b91; 
-  
-    
-
-}
-
-th {
-    background-color: transparent; /* Color de fondo para los encabezados de la tabla */
-    font-weight: bold; /* Hace los encabezados más gruesos */
-}
-
-td {
-    background-color:transparent; 
-    font-size: 13px;}
-
-
 
     #projects {
         margin-bottom: 48px;
