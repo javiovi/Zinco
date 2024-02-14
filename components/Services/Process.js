@@ -47,13 +47,13 @@ export default function Process() {
                         <div>
                             <p className='md:max-w-[357px]'>Realizamos ajustes y brindamos recomendaciones para optimizar el rendimiento del proyecto.</p>
                         </div>
-                        <Image alt='autocad tool' src='/servicios/Building-3.svg' width={137.5} height={137.5} />
+                        <Image alt='autocad tool' src='/servicios/Building-3.png' width={137.5} height={137.5} />
                     </div>
 
                     <div className='flex flex-col lg:flex-row text-center md:text-left gap-5 lg:gap-9 items-center md:items-start lg:items-center'>
-                        <Image alt='autocad tool' src='/servicios/Building-4.svg' width={137.5} height={137.5} />
+                        <Image alt='autocad tool' src='/servicios/Building-4.png' width={137.5} height={137.5} />
                         <div >
-                            <p className='md:max-w-[357px]'>Detallamos el proceso de anteproyecto, proyecto de ingeniería de detalles, avanzando con la resolución del anteproyecto.</p>
+                            <p className='md:max-w-[357px]'>Detallamos el proceso de anteproyecto, proyecto de ingeniería de detalles.</p>
                         </div>
                     </div>
                 </div>
@@ -66,14 +66,14 @@ export default function Process() {
                 {/*  */}
                 <div data-aos="fade-up" className='flex flex-col md:flex-row justify-center gap-12 lg:gap-24 2xl:gap-44 mb-12'>
                     <div className='flex flex-col text-center md:text-right gap-9 items-center md:items-end '>
-                        <Image alt='autocad tool' src='/servicios/Building-6.svg' width={137.5} height={137.5} />
+                        <Image alt='autocad tool' src='/servicios/Building-6.png' width={137.5} height={137.5} />
                         <div>
                             <h3 className='font-bold'>MODELADO CON VERTEX BD</h3>
                             <p className='md:max-w-[360px]'>Utilizando Vertex BD, ajustamos una amplia gama de parámetros que garantizan la facilidad de montaje, precisión en los encuentros y alta calidad en los detalles de terminación. Aprovechamos el potencial del software BIM para analizar consumos y crear un gemelo digital que mejora la planificación y ejecución del proyecto.</p>
                         </div>
                     </div>
                     <div className='flex flex-col text-center md:text-left gap-9 items-center md:items-start'>
-                        <Image alt='autocad tool' src='/servicios/Building-7.svg' width={137.5} height={137.5} />
+                        <Image alt='autocad tool' src='/servicios/Building-7.png' width={137.5} height={137.5} />
                         <div >
                             <h3 className='font-bold'>CÁLCULO CON CYPE 3D</h3>
                             <p className='md:max-w-[360px]'>En esta fase, creamos el modelo de cálculo estructural con un enfoque en el óptimo aprovechamiento de las secciones, manteniendo la integridad del diseño arquitectónico. Ajustamos arriostramientos y anclajes para garantizar la eficiencia de la estructura, y llevamos a cabo las verificaciones necesarias conforme a los reglamentos vigentes.</p>

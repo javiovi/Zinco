@@ -28,7 +28,7 @@ export default function Servicios() {
                             </span>
                         </span>
                         </h3>
-                        <p className='font-rubik text-lg md:text-xl text-justif sm:text-left leading-normal font-normal xl:mr-[5vw]'>En ZincO diseñamos y asesoramos técnicamente en proyectos de steel framing, para ofrecer resultados integrales a nuestros clientes.</p>
+                        <p className='font-rubik text-lg md:text-xl text-justif sm:text-left leading-normal font-normal xl:mr-[5vw]'>En ZincO diseñamos y asesoramos técnicamente en proyectos de Steel Framing, para ofrecer resultados integrales a nuestros clientes.</p>
                     </div>
                 </div>
                 <div className='flex-1 flex w-full gap-3 relative'>
