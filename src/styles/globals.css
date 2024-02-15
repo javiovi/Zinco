@@ -175,11 +175,11 @@ html {
   display: flex;
   justify-content: center;
   align-items: center; 
-  left: 30%;
-  top:32%;
-  max-width: 600px;
+  left: 28%;
+  top:50%;
+  max-width: 630px;
 
-  max-height: 400px;
+  max-height: 300px;
  
 }
 #carousel-tres{
@@ -188,9 +188,9 @@ html {
   align-items: center; 
   left: 30%;
   top:65%;
-  max-width: 600px;
+  max-width: 630px;
 
-  max-height: 400px;
+  max-height: 300px;
  
 }
 

@@ -81,12 +81,13 @@ export default function Process() {
                     </div>
                 </div>
 
+      {/*  
                 <Image data-aos="fade-up" className='mx-auto mb-11' alt='autocad tool' src='/servicios/Building-8.svg' width={137.5} height={137.5} />
                 <div data-aos="fade-up" className='text-center mx-auto mb-20'>
                     <h3 className='font-bold'>ANALISIS INICIAL Y PREDIMENSIONAMIENTO</h3>
                     <p className='max-w-[938px] mx-auto'> Realizamos un análisis exhaustivo de las cargas, alturas y otros factores clave del proyecto para ajustar el diseño estructural. Predimensionamos secciones esenciales como viguetas, montantes y dinteles, optimizando la eficiencia del sistema Steel Framing.</p>
                 </div>
-
+*/}
 
 
             </div>
