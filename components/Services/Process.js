@@ -14,7 +14,7 @@ export default function Process() {
             <h2 data-aos="fade-up" className=' mb-16 sm:mb-32 text-[8vw] sm:text-[5vw] xl:text-[4vw] 2xl:text-[61px] text-center mx-auto leading-[1.16] font-black font-archivo'>PROCESO DE INGENIERIA
                 <span className='relative'>
                     <span className='hidden md:inline-block bg-gradient-to-r from-[#1d1db8] to-[#9C73C1] text-[#1e1e1e] px-2 absolute left-3 -right-2 sm:right-0 xl:-right-2 top-2 sm:top-4 xl:top-7 -bottom-1 sm:-bottom-[6px]'></span>
-                    <span className='relative z-10 sm:whitespace-nowrap'> EN DETALLE</span>
+                    <span className='relative z-10 sm:whitespace-nowrap'> EN DETALLES</span>
                 </span>
             </h2>
 

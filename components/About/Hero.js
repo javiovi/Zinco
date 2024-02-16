@@ -54,7 +54,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className='flex-1'>
+          <div className='flex-1 '>
             <div className='relative'>
               <Image priority className='w-full' alt='Florencia Foto' src='/florencia.png' quality={100} width={378} height={517} />
               <div className='absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[rgba(73,59,187,0.80)]'></div>
@@ -66,8 +66,8 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className='md:max-w-xs font-rubik text-xl font-normal flex flex-col justify-center'  style={{ maxWidth: '25rem' }}>
-          <p  >En ZincO, somos un equipo comprometido con la especialización en la ingeniería y<br></br> el diseño en Steel Framing.</p>
+        <div className='md:max-w-xs font-rubik text-xl font-normal flex flex-col justify-center' >
+          <p >En ZincO, somos un equipo comprometido con la especialización en la ingeniería y el diseño en Steel Framing.</p>
           <p className='my-6' style={{ maxWidth: '20rem' }}>Nuestra dedicación a lo largo del tiempo se refleja en:</p>
           <p className='font-black font-archivo text-[22px]' style={{ maxWidth: '20rem' }}>SOLUCIONES TÉCNICAS SÓLIDAS Y EFICIENTES.</p>
         </div>
