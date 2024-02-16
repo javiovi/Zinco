@@ -176,7 +176,7 @@ html {
   justify-content: center;
   align-items: center; 
   left: 28%;
-  top:50%;
+  top:33%;
   max-width: 630px;
 
   max-height: 300px;
@@ -212,6 +212,8 @@ html {
   transition: transform 0.3s ease;
 }
 
+
+
 @media (max-width: 768px) {
   /* Estilos para móviles */
   .carousel-container {
@@ -224,5 +226,13 @@ html {
   .close-button {
     /* Puede que no necesites un botón de cerrar en móviles si el carrusel no es un modal */
     display: none;
+  }
+
+ 
+}
+
+@media (min-width: 768px) { /* Ajusta este valor según el breakpoint de tu diseño */
+  .responsive-padding {
+    padding-left: 14rem;
   }
 }
