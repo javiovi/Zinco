@@ -66,8 +66,9 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className='md:max-w-xs font-rubik text-xl font-normal flex flex-col justify-center' >
-          <p >En ZincO, somos un equipo comprometido con la especialización en la ingeniería y el diseño en Steel Framing.</p>
+        <div className='md:max-w-xs font-rubik text-xl font-normal flex flex-col justify-center' style={{ maxWidth: '25rem' }}  >
+        <p style={{ maxWidth: '27rem' }}> En ZincO, somos un equipo comprometido con la especialización en la ingeniería y <br></br>el diseño en Steel Framing.
+</p>
           <p className='my-6' style={{ maxWidth: '20rem' }}>Nuestra dedicación a lo largo del tiempo se refleja en:</p>
           <p className='font-black font-archivo text-[22px]' style={{ maxWidth: '20rem' }}>SOLUCIONES TÉCNICAS SÓLIDAS Y EFICIENTES.</p>
         </div>
