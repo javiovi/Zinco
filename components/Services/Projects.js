@@ -11,6 +11,18 @@ export default function Projects() {
     useEffect(() => {
         AOS.init();
     }, [])
+
+    const [isAnyCarouselOpen, setIsAnyCarouselOpen] = useState(false);
+
+const openCarousel = (carouselId) => {
+  // ... tu lógica para abrir el carrusel específico
+  setIsAnyCarouselOpen(true); // Esto hará que el fondo se vuelva opaco
+};
+
+const closeCarousel = (carouselId) => {
+  // ... tu lógica para cerrar el carrusel específico
+  setIsAnyCarouselOpen(false); // Esto quitará la opacidad del fondo
+};
   
     
     const [isCarouselOpen1, setIsCarouselOpen1] = useState(false);
@@ -35,10 +47,7 @@ export default function Projects() {
     const [currentIndex8, setCurrentIndex8] = useState(0);
     const [currentIndex9, setCurrentIndex9] = useState(0);
     
-    
-
-
-
+  
     // Establece si estamos en modo móvil basado en el ancho de la ventana
     useEffect(() => {
       const updateIsMobile = () => setIsMobile(window.innerWidth < 768);
@@ -185,7 +194,7 @@ export default function Projects() {
             </div>
 
             <div data-aos="fade-up" className='flex gap-11 flex-col xl:flex-row'>
-            <div className='flex flex-wrap justify-center md:justify-between overflow-hidden'>
+            <div className="flex flex-wrap justify-center md:justify-between overflow-hidden">
             <div className='my-2 px-2 w-full md:w-1/3 overflow-hidden'>
   {isMobile ? (
     // Para dispositivos móviles: Al hacer clic en la imagen, muestra la siguiente imagen
@@ -202,7 +211,8 @@ export default function Projects() {
       <div
         id="carousel-background1"
         onClick={handleCloseCarousel4}
-        className="fixed inset-0 bg-black bg-opacity-70 z-50 flex justify-center items-center"
+        className="fixed inset-0 bg-black bg-opacity-80 z-50 flex justify-center items-center"
+        
       >
         <div className="relative" style={{ width: '670px', height: '100%' }}>
           <div onClick={(e) => e.stopPropagation()}>
@@ -285,7 +295,7 @@ export default function Projects() {
       <div
         id="carousel-background1"
         onClick={handleCloseCarousel5}
-        className="fixed inset-0 bg-black bg-opacity-70 z-50 flex justify-center items-center"
+        className="fixed inset-0 bg-black bg-opacity-80 z-50 flex justify-center items-center"
       >
         <div className="relative" style={{ width: '660px', height: '100%' }}>
           <div onClick={(e) => e.stopPropagation()}>
@@ -371,7 +381,8 @@ export default function Projects() {
       <div
         id="carousel-background1"
         onClick={handleCloseCarousel3}
-        className="fixed inset-0 bg-black bg-opacity-70 z-50 flex justify-center items-center"
+        className="fixed inset-0 bg-black bg-opacity-80 z-50 flex justify-center items-center"
+        
       >
         <div className="relative" style={{ width: '660px', height: '100%' }}>
           <div onClick={(e) => e.stopPropagation()}>
@@ -453,11 +464,13 @@ export default function Projects() {
     // Para escritorio: Si isCarouselOpen4 es true, muestra el carousel, si no, muestra la imagen estática que puede ser clickeada para abrir el carousel
     isCarouselOpen1 ? (
       <div
-        id="carousel-background"
+        id="carousel-background1"
         onClick={handleCloseCarousel1}
-        className="fixed inset-0 bg-black bg-opacity-70 z-50 flex justify-center items-center"
+        className="fixed  inset-0 bg-black bg-opacity-80 z-50 "
+        style={{ paddingTop: '500px', paddingLeft: '430px'  }}
+      
       >
-        <div className="relative" style={{ width: '630px', height: '100%' }}>
+        <div className="relative" style={{ width: '660px', height: '100%' }}>
           <div onClick={(e) => e.stopPropagation()}>
             <Carousel
               showThumbs={false}
@@ -537,9 +550,10 @@ export default function Projects() {
     // Para escritorio: Si isCarouselOpen4 es true, muestra el carousel, si no, muestra la imagen estática que puede ser clickeada para abrir el carousel
     isCarouselOpen2 ? (
       <div
-        id="carousel-background"
+        id="carousel-background1"
         onClick={handleCloseCarousel2}
-        className="fixed inset-0 bg-black bg-opacity-70 z-50 flex justify-center items-center"
+        className="fixed inset-0 bg-black bg-opacity-80 z-50 flex justify-center items-center"
+        style={{ paddingTop: '500px' }}
       >
         <div className="relative" style={{ width: '630px', height: '100%' }}>
           <div onClick={(e) => e.stopPropagation()}>
@@ -618,9 +632,10 @@ export default function Projects() {
     // Para escritorio: Si isCarouselOpen4 es true, muestra el carousel, si no, muestra la imagen estática que puede ser clickeada para abrir el carousel
     isCarouselOpen6 ? (
       <div
-        id="carousel-background"
+        id="carousel-background1"
         onClick={handleCloseCarousel6}
         className="fixed inset-0 bg-black bg-opacity-70 z-50 flex justify-center items-center"
+        style={{ paddingTop: '500px' }}
       >
         <div className="relative" style={{ width: '650px', height: '100%' }}>
           <div onClick={(e) => e.stopPropagation()}>
@@ -705,9 +720,10 @@ style={{ width: '100%', height: '230px', objectFit: 'cover' }}
 // Para escritorio: Si isCarouselOpen8 es true, muestra el carousel, si no, muestra la imagen estática que puede ser clickeada para abrir el carousel
 isCarouselOpen8 ? (
 <div
-id="carousel-tres"
+id="carousel-background1"
 onClick={handleCloseCarousel8}
-className="fixed inset-0 bg-black bg-opacity-70 z-50 flex justify-center items-center"
+className="fixed inset-0 bg-black bg-opacity-80 z-50 flex justify-center items-center"
+style={{ paddingTop: '985px' }}
 >
 <div className="relative" style={{ width: '630px', height: '100%' }}>
 <div onClick={(e) => e.stopPropagation()}>
@@ -788,9 +804,10 @@ style={{ width: '100%', height: '230px', objectFit: 'cover' }}
 // Para escritorio: Si isCarouselOpen9 es true, muestra el carousel, si no, muestra la imagen estática que puede ser clickeada para abrir el carousel
 isCarouselOpen9 ? (
 <div
-id="carousel-tres"
+id="carousel-background1"
 onClick={handleCloseCarousel9}
-className="fixed inset-0 bg-black bg-opacity-70 z-50 flex justify-center items-center"
+className="fixed inset-0 bg-black bg-opacity-80 z-50 flex justify-center items-center"
+style={{ paddingTop: '985px' }}
 >
 <div className="relative" style={{ width: '630px', height: '100%' }}>
 <div onClick={(e) => e.stopPropagation()}>

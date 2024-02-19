@@ -171,16 +171,16 @@ html {
 
 }
 
-#carousel-background {
-  display: flex;
-  justify-content: center;
-  align-items: center; 
+#carousel-background{
+
   left: 28%;
-  top:33%;
+  top:50%;
   max-width: 630px;
 
   max-height: 300px;
+  background-color: rgba(0, 0, 0, 0.8) !important; /* Negro con opacidad del 80% */
  
+
 }
 #carousel-tres{
   display: flex;
