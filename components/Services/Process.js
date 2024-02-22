@@ -81,13 +81,16 @@ export default function Process() {
                     </div>
                 </div>
 
-      {/*  
+     
                 <Image data-aos="fade-up" className='mx-auto mb-11' alt='autocad tool' src='/servicios/Building-8.svg' width={137.5} height={137.5} />
                 <div data-aos="fade-up" className='text-center mx-auto mb-20'>
-                    <h3 className='font-bold'>ANALISIS INICIAL Y PREDIMENSIONAMIENTO</h3>
-                    <p className='max-w-[938px] mx-auto'> Realizamos un análisis exhaustivo de las cargas, alturas y otros factores clave del proyecto para ajustar el diseño estructural. Predimensionamos secciones esenciales como viguetas, montantes y dinteles, optimizando la eficiencia del sistema Steel Framing.</p>
+                    <h3 className='font-bold'>EMISION DE DOCUMENTACION PARA EJECUCION</h3>
+                    <p className='max-w-[938px] mx-auto'>En esta fase, generamos reportes detallados de consumos de perfiles, placas y otros materiales.<br></br>Además entregamos planos de armado,
+                    montaje y detalles estructurales, junto con memorias de cálculo estructural y otros documentos esenciales para el proceso de obra.
+                    Esta documentacion integral contribuye significativamente a mejorar la eficacioa del montaje, garantizar la calidad del resultado final y asegurar la conformidad de las verificaciones
+                    y proyecciones realizadas.</p>
                 </div>
-*/}
+
 
 
             </div>
