@@ -55,14 +55,21 @@ export default function Menu({ open, setOpen }) {
                     <div className='pb-12'>
                         <div className='flex justify-between mb-5 items-end'>
                             <div className='flex gap-3 '>
+                               
                                 <div className='h-9 w-9 rounded-full border border-[#989898] grid place-content-center cursor-pointer'>
+                                <a href='https://www.instagram.com/zinco.steelframing/' target='_blank' rel='noopener noreferrer' className='h-9 w-9 rounded-full border border-[#989898] grid place-content-center cursor-pointer'>
                                     <Image className='' alt='Instagram Logo' src='/Instagram-grey.svg' width={24} height={24} />
+                               </a>
                                 </div>
                                 <div className='h-9 w-9 rounded-full border border-[#989898] grid place-content-center cursor-pointer'>
+                                <a href='https://wa.me/+5493415962367' target='_blank' rel='noopener noreferrer' className='h-9 w-9 rounded-full border border-[#989898] grid place-content-center cursor-pointer'>
                                     <Image className='' alt='Whatsapp Logo' src='/Whatsapp-grey.svg' width={24} height={24} />
+                                    </a>
                                 </div>
                                 <div className='h-9 w-9 rounded-full border border-[#989898] grid place-content-center cursor-pointer'>
+                                <a href='https://www.linkedin.com/company/zinco-steelframing/' target='_blank' rel='noopener noreferrer' className='h-9 w-9 rounded-full border border-[#989898] grid place-content-center cursor-pointer'>
                                     <Image className='' alt='Linkedin Logo' src='/Linkedin-grey.svg' width={24} height={24} />
+                               </a>
                                 </div>
                             </div>
                             <Image className='max-w-[30vw]' alt='Zinco Logo' src='/FooterLogo.png' width={158} height={61.586} />
