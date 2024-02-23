@@ -10,13 +10,18 @@ export default function Footer() {
                 <div className='flex flex-1 flex-col w-full xl:w-auto justify-between mb'>
                     <div className='flex gap-3 mb-[34px]'>
                         <div className='h-9 w-9 rounded-full border border-[#989898] grid place-content-center cursor-pointer'>
+                        <a href='https://www.instagram.com/zinco.steelframing/' target='_blank' rel='noopener noreferrer' className='h-9 w-9 rounded-full border border-[#989898] grid place-content-center cursor-pointer'>
                             <Image className='' alt='Instagram Logo' src='/Instagram.svg' width={24} height={24} />
-                        </div>
+                       </a> </div>
                         <div className='h-9 w-9 rounded-full border border-[#989898] grid place-content-center cursor-pointer'>
+                        <a href='https://wa.me/+5493415962367' target='_blank' rel='noopener noreferrer' className='h-9 w-9 rounded-full border border-[#989898] grid place-content-center cursor-pointer'>
                             <Image className='' alt='Whatsapp Logo' src='/Whatsapp.svg' width={24} height={24} />
+                        </a>
                         </div>
                         <div className='h-9 w-9 rounded-full border border-[#989898] grid place-content-center cursor-pointer'>
-                            <Image className='' alt='Linkedin Logo' src='/Linkedin.svg' width={24} height={24} />
+                        <a href='https://www.linkedin.com/company/zinco-steelframing/' target='_blank' rel='noopener noreferrer' className='h-9 w-9 rounded-full border border-[#989898] grid place-content-center cursor-pointer'>
+                           <Image className='' alt='Linkedin Logo' src='/Linkedin.svg' width={24} height={24} />
+                        </a>
                         </div>
                     </div>
                     <div className='flex flex-col md:flex-row text-[15px] gap-5'>
@@ -48,8 +53,8 @@ export default function Footer() {
             </div>
             <div className='h-[2px] w-full bg-[#493BBB] mb-[22px]'></div>
             <div className='flex flex-col md:flex-row justify-between font-unbounded font-bold text-xs gap-y-5'>
-                <p className='text-[#493BBB]'>COPYRIGHT 2023 - ZINCO STEEL FRAMING</p>
-                <p>DESARROLLO & DISEÑO BY <span className='text-[#493BBB]'>AXYOMAGLOBAL</span></p>
+                <p className='text-[#493BBB]'>COPYRIGHT 2024 - ZINCO STEEL FRAMING</p>
+                <p>DESARROLLO & DISEÑO BY <a href="https://www.axyoma.com.ar" target="_blank" rel="noopener noreferrer" className='text-[#493BBB]'>AXYOMAGLOBAL</a></p>
             </div>
         </div>
     )

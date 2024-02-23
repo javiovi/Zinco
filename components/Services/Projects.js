@@ -96,8 +96,8 @@ const closeCarousel = (carouselId) => {
     
     
     
-    const array1 = ['/vida1.jpg', '/vida6.jpg']
-    const array2 = ['/mdp3.jpeg', '/mdp1.jpeg',];
+    const array1 = ['/vida6.jpg', '/vida1.jpg', ]
+    const array2 = ['/mdp1.jpg','/mdp3.jpeg'];
     const array3 = ['/poggi4.jpg', '/poggi3.jpg', '/poggi2.jpg', ];
     const array4 = [ '/sanchez1.jpg', '/sanchez3.jpg','/sanchez2.jpg' ];
     const array5 = [ '/natale1.jpg','/natale3.jpg','/natale2.jpg'];
