@@ -10,7 +10,7 @@ export default function HomeTools() {
 
     return (
         <>
-            <div data-aos="fade-up" className='px-[7.3vw] mt-32 md:mt-56 2xl:mt-80 '>
+            <div data-aos="fade-up" className='px-[7.3vw] mt-16 md:mt-8 2xl:mt-20 '>
 
                 <div className='flex justify-center items-center gap-5'>
                     <div className='hidden sm:inline-block h-[2px] w-full bg-[#3e3391]'></div>

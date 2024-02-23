@@ -7,7 +7,7 @@ export default function Tools() {
 
     return (
         <>
-            <div className='px-[7.3vw] mt-32 md:mt-80 '>
+            <div className='px-[7.3vw] mt-32s  md:mt-80'>
 
                 <div className='flex justify-center items-center gap-5'>
                     <div className='hidden lg:inline-block h-[2px] w-full bg-[#3e3391]'></div>
