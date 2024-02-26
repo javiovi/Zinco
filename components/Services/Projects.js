@@ -1,16 +1,25 @@
 
 import Image from 'next/image';
 import React, { useState,useEffect,} from 'react';
+import Loader from '/components/Loader.js';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
 
+
+
+
+
+
 export default function Projects() {
     useEffect(() => {
         AOS.init();
     }, [])
+
+    const [loading, setLoading] = useState(true);
+
 
     const [isAnyCarouselOpen, setIsAnyCarouselOpen] = useState(false);
 
@@ -178,10 +187,22 @@ const closeCarousel = (carouselId) => {
          const [isTableVisible8, setIsTableVisible8] = useState(false);
          const [isTableVisible9, setIsTableVisible9] = useState(false);
 
+ useEffect(() => {
 
+    const loadImages = async () => {
+  
+      setTimeout(() => {
+        setLoading(false);
+      }, 4000);
+    };
+
+    loadImages();
+    AOS.init();
+  }, []);
 
     return (
-        
+    <>
+      {loading && <Loader />}
         <div  id='projects' className='mb-48 xl:mb-56 px-4 lg:px-8'>
             <div data-aos="fade-up" className='flex justify-center items-center gap-4 mb-16'>
                 <div className='hidden sm:inline-block h-[2px] w-full bg-[#3e3391]'></div>
@@ -892,5 +913,6 @@ className={isTableVisible9 ? 'rotate' : ''}
       </div>
 
                  </div>
-     
-)}
+                 </>
+  );
+}
