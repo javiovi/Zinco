@@ -87,7 +87,7 @@ export default function Process() {
                     <h3 className='font-bold'>EMISION DE DOCUMENTACION PARA EJECUCION</h3>
                     <p className='max-w-[938px] mx-auto'>En esta fase, generamos reportes detallados de consumos de perfiles, placas y otros materiales.<br></br>Además entregamos planos de armado,
                     montaje y detalles estructurales, junto con memorias de cálculo estructural y otros documentos esenciales para el proceso de obra.
-                    Esta documentacion integral contribuye significativamente a mejorar la eficacioa del montaje, garantizar la calidad del resultado final y asegurar la conformidad de las verificaciones
+                    Esta documentacion integral contribuye significativamente a mejorar la eficacia del montaje, garantizar la calidad del resultado final y asegurar la conformidad de las verificaciones
                     y proyecciones realizadas.</p>
                 </div>
 

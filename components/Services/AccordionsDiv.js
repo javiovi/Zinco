@@ -57,8 +57,11 @@ export default function AccordionsDiv() {
                         <div className={`${open == 2 ? '-rotate-[45deg]' : 'rotate-[135deg]'} duration-300`}><Arrow small /></div>
                     </div>
                     <div className={`font-rubik overflow-y-hidden font-normal text-base md:text-xl space-y-8 px-4 md:px-8 ${open == 2 ? '' : 'h-0'}`}>
-                        <p>Nuestro servicio de Ingeniería de Detalles en Steel Framing abarca una profunda y minuciosa planificación de cada proyecto. Desde el análisis inicial hasta la emisión de la documentación para la ejecución, trabajamos en estrecha colaboración con nuestros clientes para asegurar que cada detalle esté cuidadosamente considerado.</p>
-                        <p>Nuestro enfoque técnico y especializado garantiza soluciones estructurales eficientes y optimizadas, maximizando la calidad del diseño y la funcionalidad.</p>
+                        <p>Nuestra oferta de Ejecución de Obra en Steel Framing se adapta a tus requerimientos:</p>
+                        <ul class="list-disc space-y-2 pl-4">
+        <li><span class="font-bold">Obra Gris:</span> Si ya cuentas con un proyecto, nos encargamos de transformar tus diseños en una estructura sólida y confiable de Steel Framing.</li>
+        <li><span class="font-bold">Proyecto Completo:</span> Colaboramos en cada etapa, desde el diseño estructural hasta la materialización completa del proyecto, incluyendo instalaciones y diseño interior. Esto garantiza una ejecución fluida y coherente.</li>
+    </ul>
                     </div>
                 </div>
                 {/*  */}
@@ -68,8 +71,13 @@ export default function AccordionsDiv() {
                         <div className={`${open == 3 ? '-rotate-[45deg]' : 'rotate-[135deg]'} duration-300`}><Arrow small /></div>
                     </div>
                     <div className={`font-rubik overflow-y-hidden font-normal text-base md:text-xl space-y-8 px-4 md:px-8 ${open == 3 ? '' : 'h-0'}`}>
-                        <p>Nuestro servicio de Ingeniería de Detalles en Steel Framing abarca una profunda y minuciosa planificación de cada proyecto. Desde el análisis inicial hasta la emisión de la documentación para la ejecución, trabajamos en estrecha colaboración con nuestros clientes para asegurar que cada detalle esté cuidadosamente considerado.</p>
-                        <p>Nuestro enfoque técnico y especializado garantiza soluciones estructurales eficientes y optimizadas, maximizando la calidad del diseño y la funcionalidad.</p>
+                        <p> Nuestra capacitación técnica está diseñada para diversas necesidades:</p>
+                        <ul class="list-disc space-y-2 pl-4">
+        <li><span class="font-bold">Empresas y Equipos:</span>Ofrecemos conocimientos profundos sobre el sistema de Steel Framing, desde su conceptualización hasta su implementación.</li>
+        <li><span class="font-bold">Profesionales:</span> Te brindamos la capacidad de desarrollar proyectos en Steel Framing con confianza y precisión.</li>
+        <li><span class="font-bold">Proveedores de Materiales:</span> Te ayudamos a comprender cómo optimizar tus servicios en el contexto del sistema Steel Framing.</li>
+        <li><span class="font-bold">Diseño y Modelado:</span> Te guiaremos en la aplicación efectiva de Vertex BD y el modelado digital, capacitándote para dar vida a proyectos exitosos.</li>
+    </ul>
                     </div>
                 </div>
 
