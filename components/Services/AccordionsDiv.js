@@ -39,7 +39,7 @@ export default function AccordionsDiv() {
 
                 <div onClick={() => Changer(1)} className={`${open == 1 && 'pb-8'} border-b border-[#3e3391] cursor-pointer`}>
                     <div className='flex gap-5 justify-between items-center font-archivo font-black text-lg md:text-[22px] uppercase mb-7'>
-                        <p>INGENIERÍA EN DETALLES</p>
+                        <p>INGENIERÍA DE DETALLES</p>
                         <div className={`${open == 1 ? '-rotate-[45deg]' : 'rotate-[135deg]'} duration-300`}><Arrow small /></div>
                     </div>
                     <div className={`font-rubik overflow-y-hidden font-normal text-base md:text-xl space-y-8 px-4 md:px-8 ${open == 1 ? '' : 'h-0'}`}>
@@ -73,7 +73,7 @@ export default function AccordionsDiv() {
                     <div className={`font-rubik overflow-y-hidden font-normal text-base md:text-xl space-y-8 px-4 md:px-8 ${open == 3 ? '' : 'h-0'}`}>
                         <p> Nuestra capacitación técnica está diseñada para diversas necesidades:</p>
                         <ul class="list-disc space-y-2 pl-4">
-        <li><span class="font-bold">Empresas y Equipos:</span>Ofrecemos conocimientos profundos sobre el sistema de Steel Framing, desde su conceptualización hasta su implementación.</li>
+        <li><span class="font-bold">Empresas y Equipos:</span> Ofrecemos conocimientos profundos sobre el sistema de Steel Framing, desde su conceptualización hasta su implementación.</li>
         <li><span class="font-bold">Profesionales:</span> Te brindamos la capacidad de desarrollar proyectos en Steel Framing con confianza y precisión.</li>
         <li><span class="font-bold">Proveedores de Materiales:</span> Te ayudamos a comprender cómo optimizar tus servicios en el contexto del sistema Steel Framing.</li>
         <li><span class="font-bold">Diseño y Modelado:</span> Te guiaremos en la aplicación efectiva de Vertex BD y el modelado digital, capacitándote para dar vida a proyectos exitosos.</li>
