@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import ReCAPTCHA from "react-google-recaptcha";
 import Arrow from '../Arrow'
 import Swal from 'sweetalert2'
 import emailjs from '@emailjs/browser';
@@ -12,20 +13,35 @@ export default function ContactForm() {
     const emailRef = useRef(null);
     const phoneRef = useRef(null);
     const messageRef = useRef(null);
+    const recaptchaRef = useRef(null);
+
+    const onChange = (value) => {
+        // Aquí puedes manejar la lógica para activar el envío del formulario
+        // o para almacenar el valor del CAPTCHA para su posterior verificación
+        console.log("Captcha value:", value);
+    };
+
 
     const options = ['Empresa', 'Profesional independiente', 'Usuario final'];
 
     const handleEnviarClick = () => {
-        // Log the input values using refs
-
-        if (nameRef.current.value == '' || emailRef.current.value == '') {
+        // Asegúrate de que los campos requeridos no estén vacíos
+        if (nameRef.current.value === '' || emailRef.current.value === '') {
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Completa todos los campos!',
+          });
+        } else {
+          // Verifica si el reCAPTCHA ha sido completado
+          const recaptchaValue = recaptchaRef.current.getValue();
+          if (!recaptchaValue) {
+            // Si el reCAPTCHA no está completado, notifica al usuario
             Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'Completa todos los campos!',
-                // backdrop:false,
-            })
-
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Por favor, completa el reCAPTCHA!',
+            });
         } else {
 
             const fullText = {
@@ -34,12 +50,10 @@ export default function ContactForm() {
                 email: emailRef.current.value,
                 phone: phoneRef.current.value,
                 message: messageRef.current.value,
-            }
+            };
 
-
-            // HABRIA QUE AGREGAR OTRA FUNCION IGUAL, PERO DIRIGIDA A SEGUNDO MAIL
-            // (ESTE VA TMARIN)
-            
+   
+   
             emailjs.send('service_c5vwjih', 'template_oco23li', fullText, 'R-ME6a-0yDnaUjvKm')
                 .then((result) => {
 
@@ -67,7 +81,7 @@ export default function ContactForm() {
             })
 
             // console.log(fullText)
-
+        }
         }
     };
 
@@ -77,12 +91,12 @@ export default function ContactForm() {
         <div className='font-unbounded font-extrabold text-sm tracking-wider mb-9 xl:max-w-[80%]'>
             <div className='mb-9'>
                 <p>NOMBRE & APELLIDO</p>
-                <input ref={nameRef} className="mt-1 mb-1 appearance-none bg-transparent border-none w-full text-[#d5d5d5] italic placeholder-[#686868] mr-3 py-1 leading-tight focus:outline-none  md:text-xl font-rubik font-light" type="text" placeholder='"Juan Perez"' aria-label="Full name" />
+                <input ref={nameRef} className="mt-1 mb-1 appearance-none bg-transparent border-none w-full text-[#d5d5d5] italic placeholder-[#686868] mr-3 py-1 leading-tight focus:outline-none  md:text-xl font-rubik font-light" type="text" placeholder='"Juan Perez"' aria-label="Full name" required />
                 <div className='block h-[2px] w-full bg-[#3e3391]'></div>
             </div>
             <div className='mb-9 relative'>
                 <p>SELECCIONAR OPCIÓN</p>
-                <div onClick={() => setDisplaySelect(!displaySelect)} className="flex cursor-pointer justify-between items-end mt-1 mb-1 appearance-none bg-transparent border-none w-full italic text-[#686868] mr-3 py-1 leading-tight focus:outline-none  md:text-xl font-rubik font-light"  >
+                <div onClick={() => setDisplaySelect(!displaySelect)} className="flex cursor-pointer justify-between items-end mt-1 mb-1 appearance-none bg-transparent border-none w-full italic text-[#686868] mr-3 py-1 leading-tight focus:outline-none  md:text-xl font-rubik font-light" required >
                     <p>{Option}</p>
                     <div className='rotate-[135deg]'>
                         <Arrow extrasmall purpleBG />
@@ -96,12 +110,12 @@ export default function ContactForm() {
             </div>
             <div className='mb-9'>
                 <p>EMAIL</p>
-                <input ref={emailRef} className="mt-1 mb-1 appearance-none bg-transparent border-none w-full text-[#d5d5d5] italic placeholder-[#686868] mr-3 py-1 leading-tight focus:outline-none  md:text-xl font-rubik font-light" type="text" placeholder='"juanperez@gmail.com"' aria-label="Full name" />
+                <input ref={emailRef} className="mt-1 mb-1 appearance-none bg-transparent border-none w-full text-[#d5d5d5] italic placeholder-[#686868] mr-3 py-1 leading-tight focus:outline-none  md:text-xl font-rubik font-light" type="text" placeholder='"juanperez@gmail.com"' aria-label="Full name" required/>
                 <div className='block h-[2px] w-full bg-[#3e3391]'></div>
             </div>
             <div className='mb-9'>
                 <p>TELÉFONO O NÚMERO DE CELULAR</p>
-                <input ref={phoneRef} className="mt-1 mb-1 appearance-none bg-transparent border-none w-full text-[#d5d5d5] italic placeholder-[#686868] mr-3 py-1 leading-tight focus:outline-none  md:text-xl font-rubik font-light" type="text" placeholder='"+54 341 0 000 000"' aria-label="Full name" />
+                <input ref={phoneRef} className="mt-1 mb-1 appearance-none bg-transparent border-none w-full text-[#d5d5d5] italic placeholder-[#686868] mr-3 py-1 leading-tight focus:outline-none  md:text-xl font-rubik font-light" type="text" placeholder='"+54 341 0 000 000"' aria-label="Full name" required />
                 <div className='block h-[2px] w-full bg-[#3e3391]'></div>
             </div>
             <div className='mb-9'>
@@ -109,7 +123,13 @@ export default function ContactForm() {
                 <input ref={messageRef} className=" mb-3 appearance-none bg-transparent border-none w-full text-[#d5d5d5] italic placeholder-[#686868] mr-3 py-1 leading-tight focus:outline-none   md:text-xl font-rubik font-light" type="text" placeholder='"Escribe tu consulta aquí..."' aria-label="Full name" />
                 <div className='block h-[2px] w-full bg-[#3e3391]'></div>
             </div>
+           
             <div onClick={handleEnviarClick} className='flex justify-end items-center text-xl gap-5 cursor-pointer'>
+            <ReCAPTCHA
+                ref={recaptchaRef}
+                sitekey="6LehHYspAAAAAFwAae6MvZJH0PO6gWH-qQVjdwZh"
+                onChange={onChange}
+            />
                 <p>ENVIAR</p>
                 <div className=' rotate-90'>
                     <Arrow small />
