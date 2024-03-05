@@ -124,19 +124,21 @@ export default function ContactForm() {
                 <div className='block h-[2px] w-full bg-[#3e3391]'></div>
             </div>
            
-            <div onClick={handleEnviarClick} className='flex justify-end items-center text-xl gap-5 cursor-pointer'>
-            <div className="custom-recaptcha scale-75"> 
-            <ReCAPTCHA
-                ref={recaptchaRef}
-                sitekey="6LehHYspAAAAAFwAae6MvZJH0PO6gWH-qQVjdwZh"
-                onChange={onChange}
-              
-            /></div>
-                <p>ENVIAR</p>
-                <div className=' rotate-90'>
-                    <Arrow small />
-                </div>
-            </div>
+            <div className='flex flex-col sm:flex-row justify-center items-center text-xl gap-5 cursor-pointer'>
+  <div className="scale-75 w-full sm:w-auto mb-4 sm:mb-0"> {/* Ajusta la escala y margen como necesario */}
+    <ReCAPTCHA
+      ref={recaptchaRef}
+      sitekey="6LehHYspAAAAAFwAae6MvZJH0PO6gWH-qQVjdwZh"
+      onChange={onChange}
+    />
+  </div>
+  <div onClick={handleEnviarClick} className='flex justify-center items-center gap-3'> {/* Ajusta el gap como necesario */}
+    <p>ENVIAR</p>
+    <div className='rotate-90'>
+      <Arrow small />
+    </div>
+  </div>
+</div>
         </div>
     )
 }
