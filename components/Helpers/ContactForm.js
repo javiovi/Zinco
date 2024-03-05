@@ -40,7 +40,7 @@ export default function ContactForm() {
             // HABRIA QUE AGREGAR OTRA FUNCION IGUAL, PERO DIRIGIDA A SEGUNDO MAIL
             // (ESTE VA TMARIN)
             
-            emailjs.send('service_65hr7r7', 'template_p7t5tkk', fullText, 'ncoUky0uBPlsCDpZS')
+            emailjs.send('service_c5vwjih', 'template_oco23li', fullText, 'R-ME6a-0yDnaUjvKm')
                 .then((result) => {
 
                     // erase form values
@@ -59,7 +59,7 @@ export default function ContactForm() {
 
 
             Swal.fire({
-                position: 'top-end',
+                position: 'center',
                 icon: 'success',
                 showConfirmButton: false,
                 text: 'Enviado Correctamente!',
