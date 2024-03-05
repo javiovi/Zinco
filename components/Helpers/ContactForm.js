@@ -125,11 +125,13 @@ export default function ContactForm() {
             </div>
            
             <div onClick={handleEnviarClick} className='flex justify-end items-center text-xl gap-5 cursor-pointer'>
+            <div className="custom-recaptcha scale-75"> 
             <ReCAPTCHA
                 ref={recaptchaRef}
                 sitekey="6LehHYspAAAAAFwAae6MvZJH0PO6gWH-qQVjdwZh"
                 onChange={onChange}
-            />
+              
+            /></div>
                 <p>ENVIAR</p>
                 <div className=' rotate-90'>
                     <Arrow small />
